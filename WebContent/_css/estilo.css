@@ -1,41 +1,165 @@
+/* Problemas de acentuacao das palavras*/
 @CHARSET "UTF-8";
 
-
-/* FormataÃ§ao de parte principal da tela*/
+/* Formataçao de parte principal da tela*/
 
 body{ 
+	  /* cor do site obs body cinza*/
+      background-color: #dddddd;
+      /* Cores das letras*/
       color: black;
-      background-color: #f7f9f9;
 } 
 
 
-p{ text-align: justify;
-   text-indent: 50px;
+/* Formatando interfase*/
+div#interface{
+/* tamanho da div obs pagina*/	
+width: 900px;	
+/* cor do site obs branco div*/
+background-color: white;	
 
+/* Divisao da tela cima, direita, baixo, esquerda*/
+margin: -20px auto 0px auto;	
+
+/* criar sombra envolta do objeto obs discolocamento lateral, vertical, espalhamento da sombra e cor da sombra */
+box-shadow: 0px 0px 10px rgba(0,0,0,.5); 
+
+/* Ajustando espaços dentro do objeto*/
+	padding: 10px 10px 10px 10px;
+}
+
+/* definicao de local da imagem*/
+header#cabecalho img#icone{
+	/* posicao livre por todo site*/
+	position: absolute;
+	/* posicao no top */
+	top: 50px;
+	/* posicao a esquerda */
+	left: 920px;
 }
 
 
-/* FormataÃ§ao de imagems com legendas*/
+
+/* formataçao de textos*/
+p{ 
+	/* Ajuste de alinhamento de texto*/
+	text-align: justify;
+	/* Indentacao de texto*/
+   	text-indent: 50px;
+
+}
+
+/* Formataçao de imagems com legendas*/
 
 figure.foto-legenda {
 	/* colocanco posicao relativa para a legenda abaixo fica na posicao certa.*/
 	position: relative;
-	/* colocanco linha em volta da imagem*/
+	/* colocanco  borda em volta da imagem*/
 	border: 8px solid white;
-	/* colocanco cor em na linha em volta da imagem*/
+	/* colocanco sombra em volta da imagem*/
 	box-shadow: 1px 1px 4px black;  
+
 }
 
 
-figure.foto-legenda img{
-	/* colocanco tamanho de imagens*/
+figure.foto-legenda img {
+	/* colocanco tamanho de imagem*/
 	width: 100%;
 	height: 100%;
 	
 }
 
-figure.foto-legenda figcaption{
-	/* colocanco tamanho de imagens*/
+/* Configurando legendas da imagem*/
+figure.foto-legenda figcaption {
 	
-    top: 100px;
+    /* definir distancia para cada bloco da lista*/
+    opacity: 0; 
+    /* Colocar movimentao livre por toda imagem*/
+    position: absolute;
+    /* Colocar legenda no topo da imagem*/
+    top:0px;
+    /* Colocando cor da borda*/
+    background-color: rgba(0,0,0,.4);
+    /* Colocando cor da palavras da legendas*/
+    color: white;
+    /* Legenda ocupando todo lado direito*/
+    width: 100%;
+    /* Legenda ocupando todo lado esquerdo*/
+    height: 100%;
+    /* Colocando distancia entre o bloco*/
+    padding: 10px;
+    /* colocar borda */
+    box-sizing: border-box;
+    /* colocar borda */
+    transition: opacity 1s;
+    
+} 
+/* Configurando legendas da imagem quando passar o mouse*/
+figure.foto-legenda:hover figcaption {
+	/* transparencia de legenda*/
+	opacity: 1;
+	
 }
+
+/* Formatacao do menu*/
+nav#menu{
+   /* colocar menu em bloco*/
+	display: block;
+}
+
+
+/* Formatacao do menu*/
+nav#menu ul{
+	/* tira da lista numeracao*/
+	list-style: none;
+	/* colocar todas as letras em maiusculas*/
+	text-transform: uppercase;
+	/* para pode colocar lista para flutuar sobre a tela*/
+	position: absolute;
+	/* para pode colocar lista para flutuar sobre a tela*/
+	/* colocar menu no topo*/
+	top: -20px;
+    /* colocar menu a esquerda*/	
+	left: 460px;
+	
+}
+
+/* Formatacao do menu*/
+nav#menu li{
+	/* colocar ites da lista em blocos*/
+	display: inline-block;
+	/* definir cor de iteis da lista*/
+	background-color: #dddddd;
+	/* Colocando distancia de cor para cada iteis da lista*/
+	padding: 10px;
+	/* Colocando distancia para cada bloco da lista*/
+	margin: 2px;
+	/* Efeito de cor tempo*/
+	transition: background-color 1s;
+	
+}
+
+/* Efeito quando passar o mouse no menu*/
+nav#menu li:hover {
+   /* colocar cor nos iteis da lista*/
+	background-color: #606060;
+}
+
+
+/* Formatacao do menu*/
+nav#menu h1 {
+	/* Esconde h1*/
+	display: none;
+	
+}
+
+/* Formatacao do menu*/
+nav#menu a {
+	/* colocando cor no link*/
+	color: black;
+	/* retirando linha abaixo do link*/
+	text-decoration: none;
+}
+
+
+
