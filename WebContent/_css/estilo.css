@@ -14,7 +14,7 @@ body{
 /* Formatando interfase*/
 div#interface{
 /* tamanho da div obs pagina*/	
-width: 900px;	
+width: 1150px;	
 /* cor do site obs branco div*/
 background-color: white;	
 
@@ -33,10 +33,59 @@ header#cabecalho img#icone{
 	/* posicao livre por todo site*/
 	position: absolute;
 	/* posicao no top */
-	top: 50px;
+	top: 70px;
 	/* posicao a esquerda */
-	left: 920px;
+	left: 1055px;
 }
+
+/* definicao de local da imagem*/
+header#cabecalho {
+	/* colocando espesura da borda, cor, tipo*/ 
+	border-bottom: 1px #606060  solid; 
+
+/* colocando altura*/
+    height: 150px;
+
+/* colocando imagens*/
+background: url("../_imagens/glass-logo-peq.jpg") /* tirar repeticao de imagem*/ no-repeat   /* posicionar imagem lateral e vertical*/ 0px 80px;   
+	
+}
+
+/* Formatando cabecalho*/
+header#cabecalho h1 {
+	/* Colocando formato do texto*/	
+	font-family: Arial, sans-serif;
+	/* Colocando tamanho*/
+	font-size: 30px;
+	/* Colocando cor*/
+	color: #606060;
+	/* Colocando sombra*/
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	/* Colocando espaço interno*/
+	padding: 0px;	
+	/* Colocando espaço externo*/
+	margin-bottom: 0px;
+	
+
+}
+
+
+/* Formatando cabecalho*/
+header#cabecalho h2 {
+	/* Colocando formato do texto*/	
+	font-family: Arial, sans-serif;
+	/* Colocando tamanho*/
+	font-size: 20px;
+	/* Colocando cor*/
+	color: #888888;
+	/* Colocando espaço interno*/
+	padding: 0px;
+	/* Colocando espaço externo*/
+	margin-top: 0px;
+	
+	
+}
+
 
 
 
@@ -120,7 +169,7 @@ nav#menu ul{
 	/* colocar menu no topo*/
 	top: -20px;
     /* colocar menu a esquerda*/	
-	left: 460px;
+	left: 550px;
 	
 }
 
