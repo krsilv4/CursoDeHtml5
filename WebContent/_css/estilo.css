@@ -1,6 +1,16 @@
 /* Problemas de acentuacao das palavras*/
 @CHARSET "UTF-8";
 
+/* Importando outros tipod de fontes*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@font-face{
+	font-family: 'FonteLogo' ;
+	src: url("../curso-html5-pacote01/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf");
+	
+}	
+
+
 /* Formataçao de parte principal da tela*/
 
 body{ 
@@ -14,7 +24,7 @@ body{
 /* Formatando interfase*/
 div#interface{
 /* tamanho da div obs pagina*/	
-width: 1150px;	
+width: 800px;	
 /* cor do site obs branco div*/
 background-color: white;	
 
@@ -35,7 +45,7 @@ header#cabecalho img#icone{
 	/* posicao no top */
 	top: 70px;
 	/* posicao a esquerda */
-	left: 1055px;
+	left: 750px;
 }
 
 /* definicao de local da imagem*/
@@ -54,7 +64,7 @@ background: url("../_imagens/glass-logo-peq.jpg") /* tirar repeticao de imagem*/
 /* Formatando cabecalho*/
 header#cabecalho h1 {
 	/* Colocando formato do texto*/	
-	font-family: Arial, sans-serif;
+	font-family: 'FonteLogo', sans-serif;
 	/* Colocando tamanho*/
 	font-size: 30px;
 	/* Colocando cor*/
@@ -73,7 +83,7 @@ header#cabecalho h1 {
 /* Formatando cabecalho*/
 header#cabecalho h2 {
 	/* Colocando formato do texto*/	
-	font-family: Arial, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	/* Colocando tamanho*/
 	font-size: 20px;
 	/* Colocando cor*/
@@ -169,7 +179,7 @@ nav#menu ul{
 	/* colocar menu no topo*/
 	top: -20px;
     /* colocar menu a esquerda*/	
-	left: 550px;
+	left: 300px;
 	
 }
 
