@@ -24,7 +24,7 @@ body{
 /* Formatando interfase*/
 div#interface{
 /* tamanho da div obs pagina*/	
-width: 800px;	
+width: 900px;	
 /* cor do site obs branco div*/
 background-color: white;	
 
@@ -45,7 +45,7 @@ header#cabecalho img#icone{
 	/* posicao no top */
 	top: 70px;
 	/* posicao a esquerda */
-	left: 750px;
+	left: 950px;
 }
 
 /* definicao de local da imagem*/
@@ -179,7 +179,7 @@ nav#menu ul{
 	/* colocar menu no topo*/
 	top: -20px;
     /* colocar menu a esquerda*/	
-	left: 300px;
+	left: 450px;
 	
 }
 
@@ -219,6 +219,74 @@ nav#menu a {
 	/* retirando linha abaixo do link*/
 	text-decoration: none;
 }
+
+/* Configuarar lateral esquerda*/
+section#corpo {
+	/* Criar um bloco*/
+	display: block;
+	/* Tamanho do bloco*/
+	width: 520px;
+	/* local do bloco*/
+	float: left;
+	/* Colocando linha borda*/
+	border-right: 1px solid #606060;
+	/* Colocando distancia da borda*/
+	padding-right: 15px;
+	
+	
+}
+
+/* Configurar lateral direita*/
+aside#lateral {
+	/* Criar um bloco*/
+	display: block;
+	/* Tamanho do bloco*/
+	width: 350px;
+	/* local do bloco*/
+	float: right;
+	
+}
+
+/* configuarar rodape*/
+footer#rodape{
+	/* colocar rodape fora do section e aside*/
+	clear: both;
+	/* colocar borda acima do texto*/
+	border-top: 1px solid #606060;
+	
+}
+
+/* configuarar rodape*/
+footer#rodape p {
+	/* Centralizando texto*/
+	text-align: center;   
+
+	
+}
+
+/* configuarar tabela*/
+table#tabelapec {
+	border: 1px solid #606060;
+/* Tirando espasos entre as celulas*/
+	border-spacing: 0px;
+/* Centralizando objeto*/
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+table#tabelapec td {
+	/* colocando bordas nas celulas*/
+	border: 1px solid #606060;
+/* colocando espaçamento dentro das celulas*/
+	padding: 10px;
+	
+}
+
+
+
+
+
 
 
 
